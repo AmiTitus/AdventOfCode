@@ -3,7 +3,7 @@ from typing import List, Set
 
 with open('input') as f:
     entries = f.read()
-entries = [int(x) for x in entries.splitlines()]
+entries = [*map(int, entries.splitlines())]
 
 def find_error(data: List[int], preamble_size:int) -> List[int]:
     res: List[int] = []
